@@ -8,7 +8,6 @@ import SwiftUI
 
 struct ConversationView: View {
     @State var conversation: Conversation
-    @Environment(\.colorScheme) var colorScheme
     @State var isSubscribed = false
     let socket = SocketConnectionManager()
     let throttler = Throttler.init(minimumDelay: 0.5)
@@ -54,9 +53,10 @@ struct ConversationView: View {
             }
         
         ZStack {
-            let backgroundColor = (colorScheme == .dark ? Color.init(UIColorFromHex(rgbValue: 0x222C37)) : Color.init(UIColorFromHex(rgbValue: 0xFFF6C3)))
+          let backgroundColor = Color.init("ConversationBackground")
             // apply to background
             backgroundColor
+              .ignoresSafeArea()
             
             VStack(alignment: .trailing) {
                 ScrollView(.vertical) {
@@ -69,7 +69,7 @@ struct ConversationView: View {
                                 
                                 // HACK: the whole subscriptions thing seems hacky
                                 if(!isSubscribed) {
-                                    let sub: Void = setupSubscriptions()
+                                    let _: Void = setupSubscriptions()
                                 }
                                 withAnimation {
                                     scrollView.scrollTo(self.conversation.messages.count, anchor: .bottom)

@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct MessageComposeView: View {
-    @Environment(\.colorScheme) var colorScheme
-    
     @State private var content: String = ""
     @State private var isEditing = false
     let onTextChange: () -> Void
@@ -30,7 +28,7 @@ struct MessageComposeView: View {
     }
     
     var body: some View {
-        let secondaryColor = colorScheme == .dark ? Color.white : Color.init(UIColorFromHex(rgbValue: 0x222C37))
+      let secondaryColor = Color.init("TextColor")
         
         HStack(alignment: .bottom) {
             VStack {
