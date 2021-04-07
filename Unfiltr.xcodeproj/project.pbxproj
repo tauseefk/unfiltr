@@ -11,7 +11,7 @@
 		6142616F259C06210045C234 /* WrappedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6142616E259C06210045C234 /* WrappedTextView.swift */; };
 		61426180259CF4780045C234 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6142617F259CF4780045C234 /* Utils.swift */; };
 		61DCBCFB25A0FC2200980776 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 61DCBCFA25A0FC2200980776 /* SocketIO */; };
-		61DCBD0025A1058800980776 /* SocketParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DCBCFF25A1058800980776 /* SocketParser.swift */; };
+		61DCBD0025A1058800980776 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DCBCFF25A1058800980776 /* JSONParser.swift */; };
 		61DCBD0525A106F100980776 /* SocketConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DCBD0425A106F100980776 /* SocketConnectionManager.swift */; };
 		61DCBD0D25A2B67900980776 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DCBD0C25A2B67900980776 /* Throttler.swift */; };
 		61E0A9B42594338C00960108 /* UnfiltrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0A9B32594338C00960108 /* UnfiltrApp.swift */; };
@@ -45,7 +45,7 @@
 		61426169259BFA010045C234 /* MessageComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposeView.swift; sourceTree = "<group>"; };
 		6142616E259C06210045C234 /* WrappedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedTextView.swift; sourceTree = "<group>"; };
 		6142617F259CF4780045C234 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		61DCBCFF25A1058800980776 /* SocketParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketParser.swift; sourceTree = "<group>"; };
+		61DCBCFF25A1058800980776 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		61DCBD0425A106F100980776 /* SocketConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketConnectionManager.swift; sourceTree = "<group>"; };
 		61DCBD0C25A2B67900980776 /* Throttler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
 		61E0A9B02594338C00960108 /* Unfiltr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unfiltr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,7 +123,7 @@
 				61426169259BFA010045C234 /* MessageComposeView.swift */,
 				6142616E259C06210045C234 /* WrappedTextView.swift */,
 				6142617F259CF4780045C234 /* Utils.swift */,
-				61DCBCFF25A1058800980776 /* SocketParser.swift */,
+				61DCBCFF25A1058800980776 /* JSONParser.swift */,
 				61DCBD0425A106F100980776 /* SocketConnectionManager.swift */,
 				61DCBD0C25A2B67900980776 /* Throttler.swift */,
 			);
@@ -294,7 +294,7 @@
 				6142616A259BFA010045C234 /* MessageComposeView.swift in Sources */,
 				61E0A9E7259433FD00960108 /* MessageView.swift in Sources */,
 				61DCBD0525A106F100980776 /* SocketConnectionManager.swift in Sources */,
-				61DCBD0025A1058800980776 /* SocketParser.swift in Sources */,
+				61DCBD0025A1058800980776 /* JSONParser.swift in Sources */,
 				61426180259CF4780045C234 /* Utils.swift in Sources */,
 				61E0A9B42594338C00960108 /* UnfiltrApp.swift in Sources */,
 				61DCBD0D25A2B67900980776 /* Throttler.swift in Sources */,
@@ -459,15 +459,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Unfiltr/Preview Content\"";
-				DEVELOPMENT_TEAM = BKT6PQFP66;
+				DEVELOPMENT_TEAM = G982WR9FX6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Unfiltr/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.unfilter.Unfiltr;
+				MARKETING_VERSION = 0.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tauseefk.unfiltr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -481,15 +482,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Unfiltr/Preview Content\"";
-				DEVELOPMENT_TEAM = BKT6PQFP66;
+				DEVELOPMENT_TEAM = G982WR9FX6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Unfiltr/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.unfilter.Unfiltr;
+				MARKETING_VERSION = 0.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tauseefk.unfiltr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

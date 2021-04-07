@@ -82,7 +82,7 @@ class SocketConnectionManager {
         
         socket?.on(Events.Info.rawValue) { (data, ack) in
             guard let dataInfo = data.first else { return }
-            if let response: SocketInfo = try? SocketParser.convert(data: dataInfo) {
+            if let response: SocketInfo = try? JSONParser.convert(data: dataInfo) {
                 self.user.id = response.id
                 print("Logged in as \(response.id)")
             }
@@ -90,21 +90,21 @@ class SocketConnectionManager {
         
         socket?.on(Events.UserConnected.rawValue) { (data, ack) in
             guard let dataInfo = data.first else { return }
-            if let response: SocketUserConnect = try? SocketParser.convert(data: dataInfo) {
+            if let response: SocketUserConnect = try? JSONParser.convert(data: dataInfo) {
                 print("Now there are \(response.users) users.")
             }
         }
         
         socket?.on(Events.UserDisconneted.rawValue) { (data, ack) in
             guard let dataInfo = data.first else { return }
-            if let response: SocketUserDisconnect = try? SocketParser.convert(data: dataInfo) {
+            if let response: SocketUserDisconnect = try? JSONParser.convert(data: dataInfo) {
                 print("User \(response.userId) disconnected")
             }
         }
         
         socket?.on(Events.NewMessage.rawValue) { (data, ack) in
             guard let dataInfo = data.first else { return }
-            if let response: SocketMessage = try? SocketParser.convert(data: dataInfo) {
+            if let response: SocketMessage = try? JSONParser.convert(data: dataInfo) {
                 print("User \(response.from) says: \(response.message) ")
                 
                 messagesSubject.send(response.message)
@@ -113,14 +113,14 @@ class SocketConnectionManager {
         
         socket?.on(Events.Typing.rawValue) { (data, ack) in
             guard let dataInfo = data.first else { return }
-            if let response: SocketTyping = try? SocketParser.convert(data: dataInfo) {
+            if let response: SocketTyping = try? JSONParser.convert(data: dataInfo) {
                 print("user \(response.userId) is typing...")
             }
         }
         
         socket?.on(Events.StoppedTyping.rawValue) { (data, ack) in
             guard let dataInfo = data.first else { return }
-            if let response: SocketStoppedTyping = try? SocketParser.convert(data: dataInfo) {
+            if let response: SocketStoppedTyping = try? JSONParser.convert(data: dataInfo) {
                 print("user \(response.userId) stopped typing...")
             }
         }

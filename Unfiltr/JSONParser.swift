@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SocketParser {
+class JSONParser {
     
     static func convert<T: Decodable>(data: Any) throws -> T {
         let jsonData = try JSONSerialization.data(withJSONObject: data)
