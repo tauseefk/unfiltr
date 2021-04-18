@@ -56,7 +56,7 @@ enum Events: String {
 class SocketConnectionManager {
     var user = User(id: UUID())
     //    var connectedUsers: [User] = []
-    let manager = SocketManager(socketURL: URL(string: ProcessInfo.processInfo.environment["server_addr"] ?? "http://localhost:5000")!, config: [.log(false), .compress])
+  let manager = SocketManager(socketURL: Environment.rootURL, config: [.log(false), .compress])
     var socket: SocketIOClient? = nil
     
     init() {

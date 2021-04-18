@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61284768262CF83B00025871 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61284767262CF83500025871 /* Environment.swift */; };
 		6142616A259BFA010045C234 /* MessageComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61426169259BFA010045C234 /* MessageComposeView.swift */; };
 		6142616F259C06210045C234 /* WrappedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6142616E259C06210045C234 /* WrappedTextView.swift */; };
 		61426180259CF4780045C234 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6142617F259CF4780045C234 /* Utils.swift */; };
@@ -42,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6128475C262CF6AC00025871 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		6128475D262CF6DB00025871 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		61284767262CF83500025871 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		61426169259BFA010045C234 /* MessageComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposeView.swift; sourceTree = "<group>"; };
 		6142616E259C06210045C234 /* WrappedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedTextView.swift; sourceTree = "<group>"; };
 		6142617F259CF4780045C234 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 		61E0A9A72594338C00960108 = {
 			isa = PBXGroup;
 			children = (
+				6128475D262CF6DB00025871 /* Development.xcconfig */,
+				6128475C262CF6AC00025871 /* Release.xcconfig */,
 				61E0A9B22594338C00960108 /* Unfiltr */,
 				61E0A9C42594338D00960108 /* UnfiltrTests */,
 				61E0A9CF2594338D00960108 /* UnfiltrUITests */,
@@ -113,6 +119,7 @@
 		61E0A9B22594338C00960108 /* Unfiltr */ = {
 			isa = PBXGroup;
 			children = (
+				61284767262CF83500025871 /* Environment.swift */,
 				61E0A9B32594338C00960108 /* UnfiltrApp.swift */,
 				61E0A9B72594338D00960108 /* Assets.xcassets */,
 				61E0A9BC2594338D00960108 /* Info.plist */,
@@ -298,6 +305,7 @@
 				61426180259CF4780045C234 /* Utils.swift in Sources */,
 				61E0A9B42594338C00960108 /* UnfiltrApp.swift in Sources */,
 				61DCBD0D25A2B67900980776 /* Throttler.swift in Sources */,
+				61284768262CF83B00025871 /* Environment.swift in Sources */,
 				6142616F259C06210045C234 /* WrappedTextView.swift in Sources */,
 				61E0A9EC2594342C00960108 /* Conversation.swift in Sources */,
 				61E0A9E2259433D100960108 /* ConversationView.swift in Sources */,
@@ -338,6 +346,7 @@
 /* Begin XCBuildConfiguration section */
 		61E0A9D32594338D00960108 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6128475D262CF6DB00025871 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -399,6 +408,7 @@
 		};
 		61E0A9D42594338D00960108 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6128475C262CF6AC00025871 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -458,6 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Unfiltr/Preview Content\"";
 				DEVELOPMENT_TEAM = G982WR9FX6;
 				ENABLE_PREVIEWS = YES;
@@ -467,7 +478,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.15;
+				MARKETING_VERSION = 0.16;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tauseefk.unfiltr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -481,6 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Unfiltr/Preview Content\"";
 				DEVELOPMENT_TEAM = G982WR9FX6;
 				ENABLE_PREVIEWS = YES;
@@ -490,7 +502,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.15;
+				MARKETING_VERSION = 0.16;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tauseefk.unfiltr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

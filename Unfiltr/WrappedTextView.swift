@@ -43,8 +43,6 @@ struct WrappedTextView: UIViewRepresentable {
     
     // styling
     textView.font = .systemFont(ofSize: 16)
-    textView.textColor = UIColor.init(Color("TextColor"))
-    textView.backgroundColor = UIColor.init(Color("ConversationBackground"))
     
     return textView
   }
