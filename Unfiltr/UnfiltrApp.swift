@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+//@main
 struct UnfiltrApp: App {
     var body: some Scene {
         WindowGroup {

@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Compose",
+        "repositoryURL": "https://github.com/din/compose.git",
+        "state": {
+          "branch": null,
+          "revision": "00395c223a9d6e6cf09c1a04691f7a9201c2bc28",
+          "version": "0.8.5"
+        }
+      },
+      {
         "package": "SocketIO",
         "repositoryURL": "https://github.com/socketio/socket.io-client-swift",
         "state": {
