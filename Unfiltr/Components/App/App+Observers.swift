@@ -12,22 +12,6 @@ import SwiftUI
 extension AppComponent {
   
   var observers: Void {
-    openSettings += {
-        settings.create {
-            .init()
-        }
-
-        settings.goBack += {
-            withAnimation {
-                router.pop()
-            }
-
-            settings.destroy()
-        }
-
-        withAnimation {
-            router.push(\Self.settings)
-        }
-    }
+    None
   }
 }

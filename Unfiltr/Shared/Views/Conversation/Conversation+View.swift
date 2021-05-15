@@ -51,13 +51,7 @@ struct ConversationView: View {
       .onChanged { _ in
         self.hideKeyboard()
       }
-    
-    ZStack {
-      let backgroundColor = Color.init("ConversationBackground")
-      // apply to background
-      backgroundColor
-        .ignoresSafeArea()
-      
+
       VStack(alignment: .trailing) {
         ScrollView(.vertical) {
           ScrollViewReader { scrollView in
@@ -87,7 +81,7 @@ struct ConversationView: View {
         .gesture(dragDown)
         MessageComposeView(onTextChange: handleTyping, onSubmit: handleSendMessage)
       }
-    }
+      .viewStyle(AppViewStyle())
   }
 }
 

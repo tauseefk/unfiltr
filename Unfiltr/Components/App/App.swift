@@ -12,10 +12,7 @@ import SwiftUI
 @main
 struct AppComponent: RouterComponent {
   
-  let conversations = ConversationsComponent()
-  let settings = DynamicComponent<SettingsComponent>()
+  let home = HomeComponent()
   
-  @ObservedObject var router = Router(start: \Self.self)
-
-  let openSettings = SignalEmitter()
+  @ObservedObject var router = Router(start: \Self.home)
 }
