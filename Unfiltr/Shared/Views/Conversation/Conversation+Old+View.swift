@@ -53,7 +53,7 @@ struct ConversationView: View {
       }
 
       VStack(alignment: .trailing) {
-        ScrollView(.vertical) {
+        ScrollView(.vertical, showsIndicators: false) {
           ScrollViewReader { scrollView in
             VStack(alignment: .trailing, spacing: 2) {
               ForEach(self.conversation.messages) { message in
@@ -74,14 +74,12 @@ struct ConversationView: View {
                   scrollView.scrollTo(count, anchor: .bottom)
                 }
               }
-            }.frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+            }
           }
         }
-        .padding(.top, 1)
         .gesture(dragDown)
         MessageComposeView(onTextChange: handleTyping, onSubmit: handleSendMessage)
       }
-      .viewStyle(AppViewStyle())
   }
 }
 

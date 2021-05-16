@@ -54,7 +54,6 @@ struct MessageView: View {
       
       MessageBubbleView(content: content, isOwn: isOwn)
         .cornerRadius(6, corners: isLast ? isOwn ? [.topLeft, .topRight, .bottomLeft] : [.topLeft, .topRight, .bottomRight] : .allCorners)
-        .padding(isOwn ? .trailing : .leading, 10)
         .padding(.top, isFirst ? 10 : 0)
       
       if (!isOwn) { Spacer().frame(minWidth: 50, maxWidth: .infinity) }

@@ -18,11 +18,14 @@
 		13AFC72F26506A5200B1B703 /* Home+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AFC72E26506A5200B1B703 /* Home+State.swift */; };
 		13AFC73126506A5D00B1B703 /* Home+Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AFC73026506A5D00B1B703 /* Home+Observers.swift */; };
 		13AFC73326506A6400B1B703 /* Home+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AFC73226506A6400B1B703 /* Home+View.swift */; };
-		13AFC73626506F2B00B1B703 /* Conversation+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AFC73526506F2B00B1B703 /* Conversation+View.swift */; };
+		13AFC73626506F2B00B1B703 /* Conversation+Old+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AFC73526506F2B00B1B703 /* Conversation+Old+View.swift */; };
 		13AFC73826506F3C00B1B703 /* Message+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AFC73726506F3C00B1B703 /* Message+View.swift */; };
 		13AFC73A26506F4A00B1B703 /* MessageCompose+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AFC73926506F4A00B1B703 /* MessageCompose+View.swift */; };
 		13AFC73C26506F5300B1B703 /* WrappedText+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AFC73B26506F5300B1B703 /* WrappedText+View.swift */; };
-		13AFC73E26506FB300B1B703 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AFC73D26506FB300B1B703 /* Conversation.swift */; };
+		13AFC73E26506FB300B1B703 /* Conversation+Old.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AFC73D26506FB300B1B703 /* Conversation+Old.swift */; };
+		13AFC7432650A89800B1B703 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AFC7422650A89800B1B703 /* Conversation.swift */; };
+		13AFC7452650A8B100B1B703 /* Conversation+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AFC7442650A8B100B1B703 /* Conversation+View.swift */; };
+		13AFC7472650A8C300B1B703 /* Conversation+Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AFC7462650A8C300B1B703 /* Conversation+Observers.swift */; };
 		61284768262CF83B00025871 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61284767262CF83500025871 /* Environment.swift */; };
 		61426180259CF4780045C234 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6142617F259CF4780045C234 /* Utils.swift */; };
 		617E588D26407806007BAECF /* PHPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617E588C26407806007BAECF /* PHPicker.swift */; };
@@ -38,9 +41,6 @@
 		61C6FD6026322E43008C0BA8 /* App+Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6FD5F26322E43008C0BA8 /* App+Observers.swift */; };
 		61C6FD6526322E6C008C0BA8 /* App+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6FD6426322E6C008C0BA8 /* App+View.swift */; };
 		61C6FD6A26322F51008C0BA8 /* App+Startup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6FD6926322F51008C0BA8 /* App+Startup.swift */; };
-		61C6FD7A26323450008C0BA8 /* Conversations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6FD7926323450008C0BA8 /* Conversations.swift */; };
-		61C6FD7F26323477008C0BA8 /* Conversations+Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6FD7E26323477008C0BA8 /* Conversations+Observers.swift */; };
-		61C6FD842632348D008C0BA8 /* Conversations+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6FD832632348D008C0BA8 /* Conversations+View.swift */; };
 		61C6FD8926323591008C0BA8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6FD8826323591008C0BA8 /* Settings.swift */; };
 		61C6FD8E263235A0008C0BA8 /* Settings+Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6FD8D263235A0008C0BA8 /* Settings+Observers.swift */; };
 		61C6FD93263235BF008C0BA8 /* Settings+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6FD92263235BF008C0BA8 /* Settings+View.swift */; };
@@ -86,11 +86,14 @@
 		13AFC72E26506A5200B1B703 /* Home+State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+State.swift"; sourceTree = "<group>"; };
 		13AFC73026506A5D00B1B703 /* Home+Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Observers.swift"; sourceTree = "<group>"; };
 		13AFC73226506A6400B1B703 /* Home+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+View.swift"; sourceTree = "<group>"; };
-		13AFC73526506F2B00B1B703 /* Conversation+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conversation+View.swift"; sourceTree = "<group>"; };
+		13AFC73526506F2B00B1B703 /* Conversation+Old+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conversation+Old+View.swift"; sourceTree = "<group>"; };
 		13AFC73726506F3C00B1B703 /* Message+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Message+View.swift"; sourceTree = "<group>"; };
 		13AFC73926506F4A00B1B703 /* MessageCompose+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageCompose+View.swift"; sourceTree = "<group>"; };
 		13AFC73B26506F5300B1B703 /* WrappedText+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WrappedText+View.swift"; sourceTree = "<group>"; };
-		13AFC73D26506FB300B1B703 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		13AFC73D26506FB300B1B703 /* Conversation+Old.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conversation+Old.swift"; sourceTree = "<group>"; };
+		13AFC7422650A89800B1B703 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		13AFC7442650A8B100B1B703 /* Conversation+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conversation+View.swift"; sourceTree = "<group>"; };
+		13AFC7462650A8C300B1B703 /* Conversation+Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conversation+Observers.swift"; sourceTree = "<group>"; };
 		6128475C262CF6AC00025871 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		6128475D262CF6DB00025871 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		61284767262CF83500025871 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -106,9 +109,6 @@
 		61C6FD5F26322E43008C0BA8 /* App+Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Observers.swift"; sourceTree = "<group>"; };
 		61C6FD6426322E6C008C0BA8 /* App+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+View.swift"; sourceTree = "<group>"; };
 		61C6FD6926322F51008C0BA8 /* App+Startup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Startup.swift"; sourceTree = "<group>"; };
-		61C6FD7926323450008C0BA8 /* Conversations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversations.swift; sourceTree = "<group>"; };
-		61C6FD7E26323477008C0BA8 /* Conversations+Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conversations+Observers.swift"; sourceTree = "<group>"; };
-		61C6FD832632348D008C0BA8 /* Conversations+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conversations+View.swift"; sourceTree = "<group>"; };
 		61C6FD8826323591008C0BA8 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		61C6FD8D263235A0008C0BA8 /* Settings+Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+Observers.swift"; sourceTree = "<group>"; };
 		61C6FD92263235BF008C0BA8 /* Settings+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+View.swift"; sourceTree = "<group>"; };
@@ -174,11 +174,21 @@
 		13AFC73426506F0E00B1B703 /* Conversation */ = {
 			isa = PBXGroup;
 			children = (
-				13AFC73526506F2B00B1B703 /* Conversation+View.swift */,
+				13AFC73526506F2B00B1B703 /* Conversation+Old+View.swift */,
 				13AFC73726506F3C00B1B703 /* Message+View.swift */,
 				13AFC73926506F4A00B1B703 /* MessageCompose+View.swift */,
 				13AFC73B26506F5300B1B703 /* WrappedText+View.swift */,
-				13AFC73D26506FB300B1B703 /* Conversation.swift */,
+				13AFC73D26506FB300B1B703 /* Conversation+Old.swift */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		13AFC7412650A86E00B1B703 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				13AFC7422650A89800B1B703 /* Conversation.swift */,
+				13AFC7462650A8C300B1B703 /* Conversation+Observers.swift */,
+				13AFC7442650A8B100B1B703 /* Conversation+View.swift */,
 			);
 			path = Conversation;
 			sourceTree = "<group>";
@@ -244,7 +254,7 @@
 		61C6FD7626323406008C0BA8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				61C6FD782632341D008C0BA8 /* Conversations */,
+				13AFC7412650A86E00B1B703 /* Conversation */,
 				61C6FD772632340F008C0BA8 /* Settings */,
 				13AFC72C26506A4A00B1B703 /* Home.swift */,
 				13AFC72E26506A5200B1B703 /* Home+State.swift */,
@@ -263,16 +273,6 @@
 				61C6FD92263235BF008C0BA8 /* Settings+View.swift */,
 			);
 			path = Settings;
-			sourceTree = "<group>";
-		};
-		61C6FD782632341D008C0BA8 /* Conversations */ = {
-			isa = PBXGroup;
-			children = (
-				61C6FD7926323450008C0BA8 /* Conversations.swift */,
-				61C6FD7E26323477008C0BA8 /* Conversations+Observers.swift */,
-				61C6FD832632348D008C0BA8 /* Conversations+View.swift */,
-			);
-			path = Conversations;
 			sourceTree = "<group>";
 		};
 		61C6FD9A2632474B008C0BA8 /* Shared */ = {
@@ -501,13 +501,13 @@
 			files = (
 				13AFC729265060FA00B1B703 /* ThumbnailStyle.swift in Sources */,
 				13AFC73326506A6400B1B703 /* Home+View.swift in Sources */,
-				13AFC73E26506FB300B1B703 /* Conversation.swift in Sources */,
+				13AFC73E26506FB300B1B703 /* Conversation+Old.swift in Sources */,
 				617E589826407930007BAECF /* EditPhoto+View.swift in Sources */,
-				61C6FD7F26323477008C0BA8 /* Conversations+Observers.swift in Sources */,
+				13AFC7472650A8C300B1B703 /* Conversation+Observers.swift in Sources */,
+				13AFC7432650A89800B1B703 /* Conversation.swift in Sources */,
 				61DCBD0525A106F100980776 /* SocketConnectionManager.swift in Sources */,
 				61DCBD0025A1058800980776 /* JSONParser.swift in Sources */,
 				617E589B264079F2007BAECF /* Outcome.swift in Sources */,
-				61C6FD842632348D008C0BA8 /* Conversations+View.swift in Sources */,
 				617E589626407914007BAECF /* EditPhoto+Observers.swift in Sources */,
 				61C6FD9D26324770008C0BA8 /* UserService.swift in Sources */,
 				617E5894264078FC007BAECF /* EditPhoto+State.swift in Sources */,
@@ -517,6 +517,7 @@
 				61E0A9B42594338C00960108 /* UnfiltrApp.swift in Sources */,
 				61C6FD6A26322F51008C0BA8 /* App+Startup.swift in Sources */,
 				13AFC72B2650615A00B1B703 /* ViewStyle.swift in Sources */,
+				13AFC7452650A8B100B1B703 /* Conversation+View.swift in Sources */,
 				617E588F26407860007BAECF /* ImageThumbnailView.swift in Sources */,
 				61C6FD6526322E6C008C0BA8 /* App+View.swift in Sources */,
 				61DCBD0D25A2B67900980776 /* Throttler.swift in Sources */,
@@ -526,10 +527,9 @@
 				13AFC73A26506F4A00B1B703 /* MessageCompose+View.swift in Sources */,
 				61C6FD6026322E43008C0BA8 /* App+Observers.swift in Sources */,
 				13AFC71F265060AD00B1B703 /* AppColor.swift in Sources */,
-				13AFC73626506F2B00B1B703 /* Conversation+View.swift in Sources */,
+				13AFC73626506F2B00B1B703 /* Conversation+Old+View.swift in Sources */,
 				617E5892264078E0007BAECF /* EditPhoto.swift in Sources */,
 				13AFC72D26506A4A00B1B703 /* Home.swift in Sources */,
-				61C6FD7A26323450008C0BA8 /* Conversations.swift in Sources */,
 				13AFC73126506A5D00B1B703 /* Home+Observers.swift in Sources */,
 				61C6FD93263235BF008C0BA8 /* Settings+View.swift in Sources */,
 				61C6FD5B26322E09008C0BA8 /* App.swift in Sources */,

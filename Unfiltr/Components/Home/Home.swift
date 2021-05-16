@@ -11,11 +11,11 @@ import SwiftUI
 
 
 struct HomeComponent: RouterComponent {
-  
-  let conversations = ConversationsComponent()
   let settings = DynamicComponent<SettingsComponent>()
+  let conversation = DynamicComponent<ConversationComponent>()
   
   @ObservedObject var router = Router(start: \Self.self)
 
   let openSettings = SignalEmitter()
+  let openConversation = ValueEmitter<String>()
 }

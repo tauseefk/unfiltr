@@ -18,37 +18,6 @@ extension AppComponent: View {
         .edgesIgnoringSafeArea(.all)
       
       RouterView()
-//      VStack {
-//        RouterView()
-//          .frame(maxWidth: .infinity, maxHeight: .infinity)
-//      }.composeTabBar(router) {
-//        ComposeTabBarItem(\Self.conversations) {
-//          VStack {
-//            Image(systemName: "message")
-//              .resizable()
-//              .aspectRatio(contentMode: .fit)
-//              .frame(width: 18, height: 18)
-//            Text("Messages")
-//              .font(.system(size: 10))
-//              .fontWeight(.semibold)
-//              .fixedSize(horizontal: true, vertical: false)
-//          }
-//        }
-//
-//        ComposeTabBarItem(\Self.settings) {
-//          VStack {
-//            Image(systemName: "gearshape")
-//              .resizable()
-//              .aspectRatio(contentMode: .fit)
-//              .frame(width: 18, height: 18)
-//            Text("Settings")
-//              .font(.system(size: 10))
-//              .fontWeight(.semibold)
-//              .fixedSize(horizontal: true, vertical: false)
-//          }
-//        }
-//      }
-//      .composeTabBarStyle(.init(backgroundColor: AppColor.background, foregroundColor: AppColor.text, tintColor: AppColor.accent, shouldShowDivider: true))
     }
   }
 }

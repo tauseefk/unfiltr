@@ -44,7 +44,7 @@ struct MessageComposeView: View {
           .padding([.bottom], 10)
       }).disabled(content.count < 1)
     }
-    .padding(10)
+    .padding(.vertical, 10)
   }
 }
 

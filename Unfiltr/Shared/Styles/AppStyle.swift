@@ -35,7 +35,7 @@ struct AppViewStyle : ViewStyle {
     
     func body(content: Content) -> some View {
         content
-            .padding(.horizontal, 24)
+            .padding(.horizontal, 16)
             .background(background.color)
     }
     

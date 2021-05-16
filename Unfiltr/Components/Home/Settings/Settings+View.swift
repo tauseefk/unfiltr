@@ -12,6 +12,13 @@ import SwiftUI
 extension SettingsComponent: View {
 
   var body: some View {
-    Text(account.state.alias)
+    VStack {
+      Text(account.state.alias)
+    }
+    .frame(minWidth: 0,
+           maxWidth: .infinity,
+           minHeight: 0,
+           maxHeight: .infinity)
+    .viewStyle(AppViewStyle())
   }
 }

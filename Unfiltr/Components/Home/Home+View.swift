@@ -11,42 +11,47 @@ import ComposeUI
 import SwiftUI
 
 extension HomeComponent: RoutableView {
-  
+
   var body: some View {
     RouterView()
   }
-  
+
+  var ConversationsList: some View {
+    ScrollView {
+      Button(emitter: openConversation, value: "Unfiltered") {
+        HStack {
+          Text("Unfiltered")
+          Spacer()
+        }
+      }
+      .padding(.vertical, 16)
+      .padding(.horizontal, 8)
+      .frame(minWidth: 0,
+             maxWidth: .infinity,
+             minHeight: 0,
+             maxHeight: 65)
+    }
+    .viewStyle(AppViewStyle())
+  }
+
   var routableBody: some View {
     VStack {
-      ConversationsComponent()
-    }.composeTabBar(router) {
-      ComposeTabBarItem(\Self.conversations) {
-        VStack {
-          Image(systemName: "message")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 18, height: 18)
-          Text("Messages")
-            .font(.system(size: 10))
-            .fontWeight(.semibold)
-            .fixedSize(horizontal: true, vertical: false)
-        }
-      }
-      
-      ComposeTabBarItem(\Self.settings) {
-        VStack {
-          Image(systemName: "gearshape")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 18, height: 18)
-          Text("Settings")
-            .font(.system(size: 10))
-            .fontWeight(.semibold)
-            .fixedSize(horizontal: true, vertical: false)
-        }
-      }
+      ConversationsList
     }
-    .composeTabBarStyle(.init(backgroundColor: AppColor.background, foregroundColor: AppColor.text, tintColor: AppColor.accent, shouldShowDivider: true))
+    .composeNavigationBar(title: "Conversations", leftView: {
+      Spacer()
+    }, rightView: {
+      HStack {
+        Image(systemName: "gearshape")
+          .resizable()
+          .aspectRatio(contentMode: .fit)
+          .frame(width: 18, height: 18)
+          .onTapGesture {
+            openSettings.send()
+          }
+      }
+    })
+    .composeNavigationBarStyle(.init(backgroundColor: AppColor.background, foregroundColor: AppColor.text, tintColor: AppColor.text))
   }
 }
 
